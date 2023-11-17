@@ -9,7 +9,6 @@ start_date = datetime.datetime.now() - datetime.timedelta(days=365)
 end_date = datetime.datetime.now()
 
 data = yf.download(symbol, start=start_date, end=end_date, interval="1d")
-#convert to datafream
 datafream=pd.DataFrame(data)
 
 #save recive datafream in csv file 
